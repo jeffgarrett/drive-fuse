@@ -1,4 +1,20 @@
 Simple Drive FUSE Filesystem
 
 - Uses the new Drive API.
-- Can only list files so far.
+- Can only list/stat files so far.
+
+
+How to Use
+==========
+Install google python apiclient, python gflags
+Create an API client ID:
+  https://code.google.com/apis/console/
+Fill in client_secrets.json from the template
+  with the client id / client secret
+
+Then:
+python drive_fuse.py email mountpoint
+Or in foreground:
+python drive_fuse.py email mountpoint -f
+
+email is not used, the oauth flow will give a choice
