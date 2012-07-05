@@ -1,0 +1,4 @@
+Simple Drive FUSE Filesystem
+
+- Uses the new Drive API.
+- Can only list files so far.
